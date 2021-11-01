@@ -39,7 +39,6 @@ def is_valid(board, row, col, value):
 def solve(board):
   if find_zero(board) == []:
     return board
-
   new_board = board
   row, col = find_zero(new_board)
   for i in range(1,10):
@@ -53,7 +52,6 @@ def solve(board):
 
 
 #result = solve(board)
-#print_board(result)
 #print_board(result)
 #print(is_valid(board, 0, 2, 1))
 #print(is_valid(board, 0, 2, 7))
