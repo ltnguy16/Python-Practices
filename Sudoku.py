@@ -44,10 +44,11 @@ def solve(board):
   for i in range(1,10):
     if is_valid(new_board, row, col, i):
       new_board[row][col] = i
-      if solve(new_board) == None:
+      result = solve(new_board)
+      if result == None:
         new_board[row][col] = 0
       else:
-        return solve(new_board)
+        return result
   return None
 
 
